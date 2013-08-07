@@ -5,7 +5,7 @@ using System.Linq;
 using MonoMac.Foundation;
 using MonoMac.AppKit;
 
-namespace ImageKitDemo
+namespace SpotlightMonoMacPoC
 {
 	public partial class MainWindow : MonoMac.AppKit.NSWindow
 	{

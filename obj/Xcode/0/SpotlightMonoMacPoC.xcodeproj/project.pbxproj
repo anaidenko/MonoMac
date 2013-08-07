@@ -1,0 +1,190 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		167A99850000000000000000 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BA6230000000000000000 /* Cocoa.framework */; };
+		1647B6690000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D8C3070000000000000000 /* Foundation.framework */; };
+		37EC936F0000000000000000 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DA00D0000000000000000 /* MainMenu.xib */; };
+		17D321E10000000000000000 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B642E7F0000000000000000 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		169580C00000000000000000 /* SpotlightMonoMacPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "SpotlightMonoMacPoC.app"; path = "SpotlightMonoMacPoC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0BA6230000000000000000 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = SDKROOT; };
+		19D8C3070000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		3B7DA00D0000000000000000 /* MainMenu.xib */ = {isa = PBXFileReference; name = "MainMenu.xib"; path = "MainMenu.xib"; sourceTree = "<group>"; };
+		1B642E7F0000000000000000 /* MainWindow.xib */ = {isa = PBXFileReference; name = "MainWindow.xib"; path = "MainWindow.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15194F1B0000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167A99850000000000000000 /* Cocoa.framework in Frameworks */,
+				1647B6690000000000000000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3532C0A90000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				1FCC74F50000000000000000 /* SpotlightMonoMacPoC */,
+				376F32100000000000000000 /* Frameworks */,
+				2A7F9ACF0000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A7F9ACF0000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169580C00000000000000000 /* SpotlightMonoMacPoC.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		376F32100000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D8C3070000000000000000 /* Foundation.framework */,
+				1A0BA6230000000000000000 /* Cocoa.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		1FCC74F50000000000000000 /* SpotlightMonoMacPoC */ = {
+			isa = PBXGroup;
+			children = (
+				3B7DA00D0000000000000000 /* MainMenu.xib */,
+				1B642E7F0000000000000000 /* MainWindow.xib */,
+			);
+			name = "SpotlightMonoMacPoC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ECE05690000000000000000 /* SpotlightMonoMacPoC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE25AE600000000000000000 /* Build configuration list for PBXNativeTarget "SpotlightMonoMacPoC" */;
+			buildPhases = (
+				3FB303670000000000000000 /* Sources */,
+				15194F1B0000000000000000 /* Frameworks */,
+				289DA2F20000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpotlightMonoMacPoC";
+			productName = "SpotlightMonoMacPoC";
+			productReference = 169580C00000000000000000 /* SpotlightMonoMacPoC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		141ADF8F0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3D9E286E0000000000000000 /* Build configuration list for PBXProject "SpotlightMonoMacPoC" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3532C0A90000000000000000;
+			productRefGroup = 2A7F9ACF0000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ECE05690000000000000000 /* SpotlightMonoMacPoC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		289DA2F20000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EC936F0000000000000000 /* MainMenu.xib in Resources */,
+				17D321E10000000000000000 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FB303670000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		129EADEA0000000000000000 /* MonoMac */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+			};
+			name = MonoMac;
+		};
+		32EB02940000000000000000 /* MonoMac */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "SpotlightMonoMacPoC";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoMac;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9E286E0000000000000000 /* Build configuration list for PBXProject "SpotlightMonoMacPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				129EADEA0000000000000000 /* MonoMac */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoMac;
+		};
+		BE25AE600000000000000000 /* Build configuration list for PBXNativeTarget "SpotlightMonoMacPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32EB02940000000000000000 /* MonoMac */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoMac;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 141ADF8F0000000000000000 /* Project object */;
+}

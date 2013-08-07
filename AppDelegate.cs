@@ -4,7 +4,7 @@ using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
 
-namespace ImageKitDemo
+namespace SpotlightMonoMacPoC
 {
 	public partial class AppDelegate : NSApplicationDelegate
 	{

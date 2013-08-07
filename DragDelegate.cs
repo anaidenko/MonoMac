@@ -5,7 +5,7 @@ using MonoMac.AppKit;
 using MonoMac.ImageKit;
 using MonoMac.Foundation;
 
-namespace ImageKitDemo
+namespace SpotlightMonoMacPoC
 {
 	public class DragDelegate: NSDraggingDestination
 	{

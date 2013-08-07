@@ -6,8 +6,9 @@ using System.Linq;
 using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ImageKit;
+using MonoMac;
 
-namespace ImageKitDemo
+namespace SpotlightMonoMacPoC
 {
 	public partial class MainWindowController : MonoMac.AppKit.NSWindowController
 	{
@@ -46,27 +47,36 @@ namespace ImageKitDemo
 
 		public override void AwakeFromNib ()
 		{
-			browseData.AddImages (NSUrl.FromString("http://danlynch.org/blog/wp-content/uploads/2009/02/mono_logo.png"));
-			browseData.AddImages (NSUrl.FromFilename ("/Library/Desktop Pictures/Nature/"));
-			browseData.AddImages (NSUrl.FromFilename ("/Library/Desktop Pictures/"));
+			var desktopPath = Environment.GetFolderPath (Environment.SpecialFolder.Desktop);
+			browseData.AddImages (NSUrl.FromFilename (desktopPath + "/"));
 			browserView.DataSource = browseData;
 			browserView.ReloadData();
+
 			//setup delegate for drag and drop
 			browserView.DraggingDestinationDelegate = new DragDelegate (browserView);
+
 			// set up event handlers just for testing
 			browserView.BackgroundWasRightClicked += delegate { Console.WriteLine ("BackgroundWasRightClicked"); };
 			browserView.SelectionDidChange += delegate { Console.WriteLine ("SelectionDidChange"); };
 			browserView.CellWasDoubleClicked += delegate { Console.WriteLine ("CellWasDoubleClicked"); };
 			browserView.CellWasRightClicked += delegate { Console.WriteLine ("CellWasRightClicked"); };
+
+			browserView.CellWasDoubleClicked += PlaybackMovie;
 		}
+
 		private BrowseData browseData = new BrowseData();
 
-		#region interface actions
-		partial void SliderChanged (NSSlider sender)
+		private void PlaybackMovie(object sender, IKImageBrowserViewIndexEventArgs e)
 		{
-			browserView.ZoomValue = sender.FloatValue;
+			var movieInfo = browseData.GetItem(browserView, e.Index);
+			//var moviePath = movieInfo.ImageUID;
+			var moviePath = movieInfo.ImageRepresentation as NSUrl;
+			var error = new NSError ();
+			movieView.Movie = new MonoMac.QTKit.QTMovie (moviePath, out error);
+			movieView.Play (this);
 		}
 
+		#region interface actions
 		partial void SearchTextChanged (NSSearchField sender)
 		{
 			browseData.SetFilter(sender.StringValue);
@@ -87,6 +97,12 @@ namespace ImageKitDemo
 				}
 				browserView.ReloadData ();
 			}
+		}
+
+		partial void pauseButtonClicked (MonoMac.Foundation.NSObject sender)
+		{
+			//movieView.Pause(this);
+			//movieView.EnterFullscreenModeWithOptions(NSScreen.MainScreen, new NSDictionary());
 		}
 		#endregion
 

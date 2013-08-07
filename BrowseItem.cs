@@ -3,7 +3,7 @@ using System.IO;
 using MonoMac.ImageKit;
 using MonoMac.Foundation;
 
-namespace ImageKitDemo
+namespace SpotlightMonoMacPoC
 {
 	public class BrowseItem : IKImageBrowserItem
 	{
@@ -11,6 +11,7 @@ namespace ImageKitDemo
 		{
 			_uri = uri;
 		}
+
 		private NSUrl _uri;
 
 		public override string ImageUID {

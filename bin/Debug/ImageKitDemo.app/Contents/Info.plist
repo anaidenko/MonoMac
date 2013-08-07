@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.ImageKitDemo</string>
+	<string>com.Spotlight.MonoMacPoC</string>
 	<key>CFBundleName</key>
 	<string>ImageKitDemo</string>
 	<key>CFBundleVersion</key>
@@ -19,7 +19,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>MonoMac</string>
+	<string>SpotlightMonoMacPoC</string>
 	<key>MonoBundleExecutable</key>
 	<string>ImageKitDemo.exe</string>
 	<key>CFBundleExecutable</key>

@@ -6,7 +6,7 @@ using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ImageKit;
 
-namespace ImageKitDemo
+namespace SpotlightMonoMacPoC
 {
 	public class BrowseData : IKImageBrowserDataSource 
 	{
@@ -109,8 +109,18 @@ namespace ImageKitDemo
 			}
 		}
 
+//		public void AddImage(string videoUrl, string thumbnailUrl)
+//		{
+//			images.Add (new BrowseItem (NSUrl.FromFilename (thumbnailUrl), NSUrl.FromFilename(videoUrl)));
+//		}
+
 		private void AddImageFile (string path, int index)
 		{
+			var extension = Path.GetExtension (path).Substring(1);
+			if (!new [] { "mov", "avi", "flv", "mp4" }.Contains (extension)) {
+				return;
+			}
+
 			string name = Path.GetFileNameWithoutExtension (path);
 			//Skip .* files
 			if (name.IndexOf ('.') != 0)
