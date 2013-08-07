@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30AF58FD0000000000000000 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3440659B0000000000000000 /* Cocoa.framework */; };
+		307C75E10000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D827F0000000000000000 /* Foundation.framework */; };
+		D98EF9300000000000000000 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1129FC310000000000000000 /* MainMenu.xib */; };
+		2D7F7E050000000000000000 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31108AA30000000000000000 /* MainWindow.xib */; };
+		10F719150000000000000000 /* black_pause_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 148825B30000000000000000 /* black_pause_normal.png */; };
+		346EB4250000000000000000 /* black_next_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 37FFC0C30000000000000000 /* black_next_normal.png */; };
+		2299750F0000000000000000 /* black_play_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 262A81AD0000000000000000 /* black_play_normal.png */; };
+		3B5DEA450000000000000000 /* black_previous_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEF6E30000000000000000 /* black_previous_normal.png */; };
+		2EC8CC8E0000000000000000 /* MainWindow.h in Sources */ = {isa = PBXBuildFile; fileRef = 3259D92C0000000000000000 /* MainWindow.h */; };
+		3AF8240D0000000000000000 /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8930AB0000000000000000 /* MainWindow.m */; };
+		13BC99430000000000000000 /* MainWindowController.h in Sources */ = {isa = PBXBuildFile; fileRef = 174DA5E10000000000000000 /* MainWindowController.h */; };
+		171AC2C50000000000000000 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AABCF630000000000000000 /* MainWindowController.m */; };
+		1C5AE4240000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBF0C20000000000000000 /* AppDelegate.h */; };
+		C34B9CF00000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C66D00000000000000000 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26C9C3200000000000000000 /* SpotlightMonoMacPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "SpotlightMonoMacPoC.app"; path = "SpotlightMonoMacPoC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3440659B0000000000000000 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = SDKROOT; };
+		340D827F0000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		1129FC310000000000000000 /* MainMenu.xib */ = {isa = PBXFileReference; name = "MainMenu.xib"; path = "MainMenu.xib"; sourceTree = "<group>"; };
+		31108AA30000000000000000 /* MainWindow.xib */ = {isa = PBXFileReference; name = "MainWindow.xib"; path = "MainWindow.xib"; sourceTree = "<group>"; };
+		148825B30000000000000000 /* black_pause_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black_pause_normal.png"; path = "black_pause_normal.png"; sourceTree = "<group>"; };
+		37FFC0C30000000000000000 /* black_next_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black_next_normal.png"; path = "black_next_normal.png"; sourceTree = "<group>"; };
+		262A81AD0000000000000000 /* black_play_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black_play_normal.png"; path = "black_play_normal.png"; sourceTree = "<group>"; };
+		3EEEF6E30000000000000000 /* black_previous_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black_previous_normal.png"; path = "black_previous_normal.png"; sourceTree = "<group>"; };
+		3259D92C0000000000000000 /* MainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MainWindow.h"; path = "MainWindow.h"; sourceTree = "<group>"; };
+		3E8930AB0000000000000000 /* MainWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MainWindow.m"; path = "MainWindow.m"; sourceTree = "<group>"; };
+		174DA5E10000000000000000 /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MainWindowController.h"; path = "MainWindowController.h"; sourceTree = "<group>"; };
+		1AABCF630000000000000000 /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MainWindowController.m"; path = "MainWindowController.m"; sourceTree = "<group>"; };
+		1FEBF0C20000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		FC5C66D00000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363D44B30000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AF58FD0000000000000000 /* Cocoa.framework in Frameworks */,
+				307C75E10000000000000000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1656B6410000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				F06A8D000000000000000000 /* SpotlightMonoMacPoC */,
+				2109DC1B0000000000000000 /* Frameworks */,
+				BA3906700000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA3906700000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26C9C3200000000000000000 /* SpotlightMonoMacPoC.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		2109DC1B0000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				340D827F0000000000000000 /* Foundation.framework */,
+				3440659B0000000000000000 /* Cocoa.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		F06A8D000000000000000000 /* SpotlightMonoMacPoC */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBF0C20000000000000000 /* AppDelegate.h */,
+				37FFC0C30000000000000000 /* black_next_normal.png */,
+				148825B30000000000000000 /* black_pause_normal.png */,
+				262A81AD0000000000000000 /* black_play_normal.png */,
+				3EEEF6E30000000000000000 /* black_previous_normal.png */,
+				1129FC310000000000000000 /* MainMenu.xib */,
+				3259D92C0000000000000000 /* MainWindow.h */,
+				31108AA30000000000000000 /* MainWindow.xib */,
+				174DA5E10000000000000000 /* MainWindowController.h */,
+				3CDA1BEA0000000000000000 /* Supporting Files */,
+			);
+			name = "SpotlightMonoMacPoC";
+			sourceTree = "<group>";
+		};
+		3CDA1BEA0000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C66D00000000000000000 /* AppDelegate.m */,
+				3E8930AB0000000000000000 /* MainWindow.m */,
+				1AABCF630000000000000000 /* MainWindowController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB1D9A20000000000000000 /* SpotlightMonoMacPoC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B976580000000000000000 /* Build configuration list for PBXNativeTarget "SpotlightMonoMacPoC" */;
+			buildPhases = (
+				2468059D0000000000000000 /* Sources */,
+				363D44B30000000000000000 /* Frameworks */,
+				D52A52800000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpotlightMonoMacPoC";
+			productName = "SpotlightMonoMacPoC";
+			productReference = 26C9C3200000000000000000 /* SpotlightMonoMacPoC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FFEB3C80000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2D06507E0000000000000000 /* Build configuration list for PBXProject "SpotlightMonoMacPoC" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1656B6410000000000000000;
+			productRefGroup = BA3906700000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB1D9A20000000000000000 /* SpotlightMonoMacPoC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D52A52800000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98EF9300000000000000000 /* MainMenu.xib in Resources */,
+				2D7F7E050000000000000000 /* MainWindow.xib in Resources */,
+				10F719150000000000000000 /* black_pause_normal.png in Resources */,
+				346EB4250000000000000000 /* black_next_normal.png in Resources */,
+				2299750F0000000000000000 /* black_play_normal.png in Resources */,
+				3B5DEA450000000000000000 /* black_previous_normal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2468059D0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC8CC8E0000000000000000 /* MainWindow.h in Sources */,
+				3AF8240D0000000000000000 /* MainWindow.m in Sources */,
+				13BC99430000000000000000 /* MainWindowController.h in Sources */,
+				171AC2C50000000000000000 /* MainWindowController.m in Sources */,
+				1C5AE4240000000000000000 /* AppDelegate.h in Sources */,
+				C34B9CF00000000000000000 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E8282230000000000000000 /* MonoMac */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+			};
+			name = MonoMac;
+		};
+		22532AA40000000000000000 /* MonoMac */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "SpotlightMonoMacPoC";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoMac;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D06507E0000000000000000 /* Build configuration list for PBXProject "SpotlightMonoMacPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8282230000000000000000 /* MonoMac */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoMac;
+		};
+		37B976580000000000000000 /* Build configuration list for PBXNativeTarget "SpotlightMonoMacPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22532AA40000000000000000 /* MonoMac */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoMac;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FFEB3C80000000000000000 /* Project object */;
+}

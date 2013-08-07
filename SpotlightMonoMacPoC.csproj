@@ -80,4 +80,10 @@
     <InterfaceDefinition Include="MainMenu.xib" />
     <InterfaceDefinition Include="MainWindow.xib" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="black_pause_normal.png" />
+    <Content Include="black_next_normal.png" />
+    <Content Include="black_play_normal.png" />
+    <Content Include="black_previous_normal.png" />
+  </ItemGroup>
 </Project>

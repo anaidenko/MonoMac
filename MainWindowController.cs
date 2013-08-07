@@ -12,6 +12,8 @@ namespace SpotlightMonoMacPoC
 {
 	public partial class MainWindowController : MonoMac.AppKit.NSWindowController
 	{
+		private bool isPlaying = false;
+
 		#region Constructors
 
 		// Called when created from unmanaged code
@@ -62,18 +64,42 @@ namespace SpotlightMonoMacPoC
 			browserView.CellWasRightClicked += delegate { Console.WriteLine ("CellWasRightClicked"); };
 
 			browserView.CellWasDoubleClicked += PlaybackMovie;
+
+			playMovieButton.Activated += PlayClicked;
+			prevMovieButton.Activated += PrevMovieClicked;
 		}
 
 		private BrowseData browseData = new BrowseData();
 
+		private void PrevMovieClicked(object sender, EventArgs e)
+		{
+		}
+
+		private void PlayClicked(object sender, EventArgs e)
+		{
+			if (isPlaying)
+			{
+				movieView.Pause (this);
+				playMovieButton.Image = NSImage.ImageNamed ("black_play_normal.png");
+			}
+			else
+			{
+				movieView.Play (this);
+				playMovieButton.Image = NSImage.ImageNamed ("black_pause_normal.png");
+			}
+
+			isPlaying = !isPlaying;
+		}
+
 		private void PlaybackMovie(object sender, IKImageBrowserViewIndexEventArgs e)
 		{
 			var movieInfo = browseData.GetItem(browserView, e.Index);
-			//var moviePath = movieInfo.ImageUID;
 			var moviePath = movieInfo.ImageRepresentation as NSUrl;
 			var error = new NSError ();
+
 			movieView.Movie = new MonoMac.QTKit.QTMovie (moviePath, out error);
-			movieView.Play (this);
+			isPlaying = false;
+			PlayClicked (this, EventArgs.Empty);
 		}
 
 		#region interface actions

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MonoMac.Foundation;
 using MonoMac.AppKit;
+using System.Drawing;
 
 namespace SpotlightMonoMacPoC
 {
@@ -30,6 +31,20 @@ namespace SpotlightMonoMacPoC
 		}
 		
 		#endregion
+
+		public override void AwakeFromNib ()
+		{
+			base.AwakeFromNib ();
+
+			prevMovieButton.SetFrameSize (new SizeF (40, 40));
+
+			var playButtonNewLocation = new PointF (
+				playButton.Frame.Left + (playButton.Frame.Size.Width - 50) / 2,
+				playButton.Frame.Top + (playButton.Frame.Size.Height - 50) / 2);
+			playButton.Frame = new RectangleF (playButtonNewLocation, new SizeF (50, 50));
+
+			nextMovieButton.SetFrameSize (new SizeF (40, 40));
+		}
 	}
 }
 

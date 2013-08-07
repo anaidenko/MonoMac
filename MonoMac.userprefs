@@ -1,19 +1,20 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="8/7/2013 8:17:49 AM">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="8/7/2013 11:22:36 AM">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainWindowController.cs">
     <Files>
-      <File FileName="MainWindowController.cs" Line="12" Column="2" />
-      <File FileName="BrowseData.cs" Line="1" Column="1" />
-      <File FileName="BrowseItem.cs" Line="1" Column="1" />
-      <File FileName="DragDelegate.cs" Line="1" Column="1" />
+      <File FileName="MainWindowController.cs" Line="74" Column="3" />
       <File FileName="AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="MainMenu.xib.designer.cs" Line="7" Column="21" />
-      <File FileName="MainMenu.xib" Line="17" Column="51" />
-      <File FileName="MainWindow.xib" Line="4" Column="30" />
-      <File FileName="Readme.txt" Line="4" Column="8" />
-      <File FileName="MainWindow.xib.designer.cs" Line="11" Column="11" />
-      <File FileName="Info.plist" />
+      <File FileName="MainWindow.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SpotlightMonoMacPoC" expanded="True">
+            <Node name="MainWindow.xib" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

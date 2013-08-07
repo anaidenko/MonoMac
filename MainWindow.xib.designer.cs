@@ -17,6 +17,15 @@ namespace SpotlightMonoMacPoC
 		[Outlet]
 		MonoMac.QTKit.QTMovieView movieView { get; set; }
 
+		[Outlet]
+		MonoMac.AppKit.NSButton nextMovieButton { get; set; }
+
+		[Outlet]
+		MonoMac.AppKit.NSButton playMovieButton { get; set; }
+
+		[Outlet]
+		MonoMac.AppKit.NSButton prevMovieButton { get; set; }
+
 		[Action ("AddButtonClicked:")]
 		partial void AddButtonClicked (MonoMac.AppKit.NSButton sender);
 
@@ -40,15 +49,52 @@ namespace SpotlightMonoMacPoC
 				movieView.Dispose ();
 				movieView = null;
 			}
+
+			if (prevMovieButton != null) {
+				prevMovieButton.Dispose ();
+				prevMovieButton = null;
+			}
+
+			if (nextMovieButton != null) {
+				nextMovieButton.Dispose ();
+				nextMovieButton = null;
+			}
+
+			if (playMovieButton != null) {
+				playMovieButton.Dispose ();
+				playMovieButton = null;
+			}
 		}
 	}
 
 	[Register ("MainWindow")]
 	partial class MainWindow
 	{
+		[Outlet]
+		MonoMac.AppKit.NSButton nextMovieButton { get; set; }
+
+		[Outlet]
+		MonoMac.AppKit.NSButton playButton { get; set; }
+
+		[Outlet]
+		MonoMac.AppKit.NSButton prevMovieButton { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (nextMovieButton != null) {
+				nextMovieButton.Dispose ();
+				nextMovieButton = null;
+			}
+
+			if (playButton != null) {
+				playButton.Dispose ();
+				playButton = null;
+			}
+
+			if (prevMovieButton != null) {
+				prevMovieButton.Dispose ();
+				prevMovieButton = null;
+			}
 		}
 	}
 }
